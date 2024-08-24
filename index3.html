@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles3.css" />
+  </head>
+  <body>
+    <br />
+    <center>
+      <h1 id="heading">The Periodic Table</h1>
+    </center>
+    <br />
+    <table>
+      <tr>
+        <td class="yellow">
+          <span id="atomic_number">1</span>
+          <span id="atomic_mass">1.0078</span>
+          <pre id="element_symbol" class="yellow">H</pre>
+          <pre id="element_name">Hydrogen   </pre>
+        </td>
+        <td colspan="16" style="border: hidden">
+          <span class="reactive">Reactive nonmetals</span>
+          <div id="reactive"></div>
+          <span class="transition">Transition metals</span>
+          <div id="transition"></div>
+          <span class="gases">Noble gases</span>
+          <div id="gases"></div>
+        </td>
+        <td class="pink">
+          <span id="atomic_number">2</span>
+          <span id="atomic_mass">4.0026</span>
+          <pre id="element_symbol" class="pink">He</pre>
+          <pre id="element_name">Helium     </pre>
+        </td>
+      </tr>
+      <tr>
+        <td class="green">
+          <span id="atomic_number">3</span>
+          <span id="atomic_mass">6.9410</span>
+          <pre id="element_symbol" class="green">Li</pre>
+          <pre id="element_name">Lithium     </pre>
+        </td>
+        <td class="purple">
+          <span id="atomic_number">14</span>
+          <span id="atomic_mass">9.022</span>
+          <pre id="element_symbol" class="purple">Be</pre>
+          <pre id="element_name">Beryllium   </pre>
+        </td>
+        <td colspan="10" style="border: hidden">
+          <span class="alkali">Alkali metals</span>
+          <div id="alkali"></div>
+          <span class="meta">Metalloids</span>
+          <div id="meta"></div>
+          <span class="lan">Lanthanides</span>
+          <div id="lan"></div>
+        </td>
+        <td class="seagreen">
+          <span id="atomic_number">5</span>
+          <span id="atomic_mass">10.811</span>
+          <pre id="element_symbol" class="seagreen">B</pre>
+          <pre id="element_name">Boron      </pre>
+        </td>
+        <td class="yellow">
+          <span id="atomic_number">6</span>
+          <span id="atomic_mass">12.011</span>
+          <pre id="element_symbol" class="yellow">C</pre>
+          <pre id="element_name">Carbon     </pre>
+        </td>
+        <td class="yellow">
+          <span id="atomic_number">7</span>
+          <span id="atomic_mass">14.007</span>
+          <pre id="element_symbol" class="yellow">N</pre>
+          <pre id="element_name">Nitrogen    </pre>
+        </td>
+        <td class="yellow">
+          <span id="atomic_number">8</span>
+          <span id="atomic_mass">15.999</span>
+          <pre id="element_symbol" class="yellow">O</pre>
+          <pre id="element_name">Oxygen    </pre>
+        </td>
+        <td class="yellow">
+          <span id="atomic_number">9</span>
+          <span id="atomic_mass">18.998</span>
+          <pre id="element_symbol" class="yellow">F</pre>
+          <pre id="element_name">Fluorine    </pre>
+        </td>
+        <td class="pink">
+          <span id="atomic_number">10</span>
+          <span id="atomic_mass">20.180</span>
+          <pre id="element_symbol" class="pink">Ne</pre>
+          <pre id="element_name">Neon       </pre>
+        </td>
+      </tr>
+      <tr>
+        <td class="green">
+          <span id="atomic_number">11</span>
+          <span id="atomic_mass">22.990</span>
+          <pre id="element_symbol" class="green">Na</pre>
+          <pre id="element_name">Sodium     </pre>
+        </td>
+        <td class="purple">
+          <span id="atomic_number">12</span>
+          <span id="atomic_mass">24.305</span>
+          <pre id="element_symbol" class="purple">Mg</pre>
+          <pre id="element_name">Magnesium  </pre>
+        </td>
+        <td colspan="10" style="border: hidden">
+          <span class="earth">Alkaline earth</span>
+          <div id="earth"></div>
+          <span class="post">Post-Transsition metals</span>
+          <div id="post"></div>
+          <span class="act">Actinides</span>
+          <div id="act"></div>
+        </td>
+        <td class="grecian">
+          <span id="atomic_number">13</span>
+          <span id="atomic_mass">26.982</span>
+          <pre id="element_symbol" class="grecian">Al</pre>
+          <pre id="element_name">Aluminium  </pre>
+        </td>
+        <td class="seagreen">
+          <span id="atomic_number">14</span>
+          <span id="atomic_mass">28.086</span>
+          <pre id="element_symbol" class="seagreen">Si</pre>
+          <pre id="element_name">Silicon     </pre>
+        </td>
+        <td class="yellow">
+          <span id="atomic_number">15</span>
+          <span id="atomic_mass">30.974</span>
+          <pre id="element_symbol" class="yellow">P</pre>
+          <pre id="element_name">Phosphorus </pre>
+        </td>
+        <td class="yellow">
+          <span id="atomic_number">16</span>
+          <span id="atomic_mass">32.065</span>
+          <pre id="element_symbol" class="yellow">S</pre>
+          <pre id="element_name">Sulfur      </pre>
+        </td>
+        <td class="yellow">
+          <span id="atomic_number">17</span>
+          <span id="atomic_mass">35.453</span>
+          <pre id="element_symbol" class="yellow">Cl</pre>
+          <pre id="element_name">Chlorine    </pre>
+        </td>
+        <td class="pink">
+          <span id="atomic_number">18</span>
+          <span id="atomic_mass">39.948</span>
+          <pre id="element_symbol" class="pink">Ar</pre>
+          <pre id="element_name">Argon      </pre>
+        </td>
+      </tr>
+      <tr>
+        <td class="green">
+          <span id="atomic_number">19</span>
+          <span id="atomic_mass">39.098</span>
+          <pre id="element_symbol" class="green">K</pre>
+          <pre id="element_name">Patassium  </pre>
+        </td>
+        <td class="purple">
+          <span id="atomic_number">20</span>
+          <span id="atomic_mass">40.078</span>
+          <pre id="element_symbol" class="purple">Ca</pre>
+          <pre id="element_name">Calcium    </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">21</span>
+          <span id="atomic_mass">44.956</span>
+          <pre id="element_symbol" class="red">Sc</pre>
+          <pre id="element_name">Scandium   </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">22</span>
+          <span id="atomic_mass">47.867</span>
+          <pre id="element_symbol" class="red">Ti</pre>
+          <pre id="element_name">Titanium    </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">23</span>
+          <span id="atomic_mass">50.942</span>
+          <pre id="element_symbol" class="red">V</pre>
+          <pre id="element_name">Vanadium   </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">24</span>
+          <span id="atomic_mass">51.996</span>
+          <pre id="element_symbol" class="red">Cr</pre>
+          <pre id="element_name">Chromium   </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">25</span>
+          <span id="atomic_mass">54.938</span>
+          <pre id="element_symbol" class="red">Mn</pre>
+          <pre id="element_name">Manganese  </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">26</span>
+          <span id="atomic_mass">55.845</span>
+          <pre id="element_symbol" class="red">Fe</pre>
+          <pre id="element_name">Iron         </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">27</span>
+          <span id="atomic_mass">58.933</span>
+          <pre id="element_symbol" class="red">Co</pre>
+          <pre id="element_name">Cobalt      </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">28</span>
+          <span id="atomic_mass">58.693</span>
+          <pre id="element_symbol" class="red">Ni</pre>
+          <pre id="element_name">Nickel      </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">29</span>
+          <span id="atomic_mass">63.546</span>
+          <pre id="element_symbol" class="red">Cu</pre>
+          <pre id="element_name">Copper    </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">30</span>
+          <span id="atomic_mass">65.380</span>
+          <pre id="element_symbol" class="red">Zn</pre>
+          <pre id="element_name">Zinc        </pre>
+        </td>
+        <td class="grecian">
+          <span id="atomic_number">31</span>
+          <span id="atomic_mass">69.723</span>
+          <pre id="element_symbol" class="grecian">Ga</pre>
+          <pre id="element_name">Gallium     </pre>
+        </td>
+        <td class="seagreen">
+          <span id="atomic_number">32</span>
+          <span id="atomic_mass">72.640</span>
+          <pre id="element_symbol" class="seagreen">Ge</pre>
+          <pre id="element_name">Germanium  </pre>
+        </td>
+        <td class="seagreen">
+          <span id="atomic_number">33</span>
+          <span id="atomic_mass">74.922</span>
+          <pre id="element_symbol" class="seagreen">As</pre>
+          <pre id="element_name">Arsenic     </pre>
+        </td>
+        <td class="yellow">
+          <span id="atomic_number">34</span>
+          <span id="atomic_mass">78.960</span>
+          <pre id="element_symbol" class="yellow">Se</pre>
+          <pre id="element_name">Selenium    </pre>
+        </td>
+        <td class="yellow">
+          <span id="atomic_number">35</span>
+          <span id="atomic_mass">79.904</span>
+          <pre id="element_symbol" class="yellow">Br</pre>
+          <pre id="element_name">Bromine    </pre>
+        </td>
+        <td class="pink">
+          <span id="atomic_number">36</span>
+          <span id="atomic_mass">83.798</span>
+          <pre id="element_symbol" class="pink">Kr</pre>
+          <pre id="element_name">Kryptan     </pre>
+        </td>
+      </tr>
+      <tr>
+        <td class="green">
+          <span id="atomic_number">37</span>
+          <span id="atomic_mass">85.468</span>
+          <pre id="element_symbol" class="green">Rb</pre>
+          <pre id="element_name">Rubidium    </pre>
+        </td>
+        <td class="purple">
+          <span id="atomic_number">38</span>
+          <span id="atomic_mass">87.620</span>
+          <pre id="element_symbol" class="purple">Sr</pre>
+          <pre id="element_name">Strontium    </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">39</span>
+          <span id="atomic_mass">88.906</span>
+          <pre id="element_symbol" class="red">Y</pre>
+          <pre id="element_name">Yttrium      </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">40</span>
+          <span id="atomic_mass">91.224</span>
+          <pre id="element_symbol" class="red">Zr</pre>
+          <pre id="element_name">Zirconium   </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">41</span>
+          <span id="atomic_mass">92.906</span>
+          <pre id="element_symbol" class="red">Nb</pre>
+          <pre id="element_name">Niobium    </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">42</span>
+          <span id="atomic_mass">95.950</span>
+          <pre id="element_symbol" class="red">Mo</pre>
+          <pre id="element_name">Molybdenum </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">43</span>
+          <span id="atomic_mass">98</span>
+          <pre id="element_symbol" class="red">Tc</pre>
+          <pre id="element_name">Technetium  </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">44</span>
+          <span id="atomic_mass">101.07</span>
+          <pre id="element_symbol" class="red">Ru</pre>
+          <pre id="element_name">Ruthenium  </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">45</span>
+          <span id="atomic_mass">102.91</span>
+          <pre id="element_symbol" class="red">Rh</pre>
+          <pre id="element_name">Rhodium    </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">46</span>
+          <span id="atomic_mass">106.42</span>
+          <pre id="element_symbol" class="red">Pd</pre>
+          <pre id="element_name">Palladium   </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">47</span>
+          <span id="atomic_mass">107.87</span>
+          <pre id="element_symbol" class="red">Ag</pre>
+          <pre id="element_name">Silver       </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">48</span>
+          <span id="atomic_mass">112.41</span>
+          <pre id="element_symbol" class="red">Cd</pre>
+          <pre id="element_name">Cadmium   </pre>
+        </td>
+        <td class="grecian">
+          <span id="atomic_number">49</span>
+          <span id="atomic_mass">114.82</span>
+          <pre id="element_symbol" class="grecian">In</pre>
+          <pre id="element_name">Indium      </pre>
+        </td>
+        <td class="grecian">
+          <span id="atomic_number">50</span>
+          <span id="atomic_mass">118.71</span>
+          <pre id="element_symbol" class="grecian">Sn</pre>
+          <pre id="element_name">Tin         </pre>
+        </td>
+        <td class="seagreen">
+          <span id="atomic_number">51</span>
+          <span id="atomic_mass">121.76</span>
+          <pre id="element_symbol" class="seagreen">Sb</pre>
+          <pre id="element_name">Antimony    </pre>
+        </td>
+        <td class="seagreen">
+          <span id="atomic_number">52</span>
+          <span id="atomic_mass">127.60</span>
+          <pre id="element_symbol" class="seagreen">Te</pre>
+          <pre id="element_name">Tellurium    </pre>
+        </td>
+        <td class="yellow">
+          <span id="atomic_number">53</span>
+          <span id="atomic_mass">126.90</span>
+          <pre id="element_symbol" class="yellow">I</pre>
+          <pre id="element_name">Iodine      </pre>
+        </td>
+        <td class="pink">
+          <span id="atomic_number">54</span>
+          <span id="atomic_mass">131.29</span>
+          <pre id="element_symbol" class="pink">Xe</pre>
+          <pre id="element_name">Xenon      </pre>
+        </td>
+      </tr>
+      <tr>
+        <td class="green">
+          <span id="atomic_number">55</span>
+          <span id="atomic_mass">132.91</span>
+          <pre id="element_symbol" class="green">Cs</pre>
+          <pre id="element_name">Caesium    </pre>
+        </td>
+        <td class="purple">
+          <span id="atomic_number">56</span>
+          <span id="atomic_mass">137.33</span>
+          <pre id="element_symbol" class="purple">Ba</pre>
+          <pre id="element_name">Barium     </pre>
+        </td>
+        <td class="gun">
+          <span id="atomic_number">57</span>
+          <span id="atomic_mass">138.91</span>
+          <pre id="element_symbol" class="gun">La</pre>
+          <pre id="element_name">Hydrogen   </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">72</span>
+          <span id="atomic_mass">178.49</span>
+          <pre id="element_symbol" class="red">Hf</pre>
+          <pre id="element_name">Hafnium     </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">73</span>
+          <span id="atomic_mass">180.95</span>
+          <pre id="element_symbol" class="red">Ta</pre>
+          <pre id="element_name">Tantalum   </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">74</span>
+          <span id="atomic_mass">183.84</span>
+          <pre id="element_symbol" class="red">W</pre>
+          <pre id="element_name">Tungsten    </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">75</span>
+          <span id="atomic_mass">186.21</span>
+          <pre id="element_symbol" class="red">Re</pre>
+          <pre id="element_name">Rhenium    </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">76</span>
+          <span id="atomic_mass">190.23</span>
+          <pre id="element_symbol" class="red">Os</pre>
+          <pre id="element_name">Osmium    </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">77</span>
+          <span id="atomic_mass">192.22</span>
+          <pre id="element_symbol" class="red">Ir</pre>
+          <pre id="element_name">Iridium      </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">78</span>
+          <span id="atomic_mass">195.08</span>
+          <pre id="element_symbol" class="red">Pt</pre>
+          <pre id="element_name">Platinum    </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">79</span>
+          <span id="atomic_mass">196.97</span>
+          <pre id="element_symbol" class="red">Au</pre>
+          <pre id="element_name">Gold       </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">80</span>
+          <span id="atomic_mass">200.59</span>
+          <pre id="element_symbol" class="red">Hg</pre>
+          <pre id="element_name">Mercury     </pre>
+        </td>
+        <td class="grecian">
+          <span id="atomic_number">81</span>
+          <span id="atomic_mass">204.38</span>
+          <pre id="element_symbol" class="grecian">Tl</pre>
+          <pre id="element_name">Tallium     </pre>
+        </td>
+        <td class="grecian">
+          <span id="atomic_number">82</span>
+          <span id="atomic_mass">207.20</span>
+          <pre id="element_symbol" class="grecian">Pb</pre>
+          <pre id="element_name">Lead       </pre>
+        </td>
+        <td class="grecian">
+          <span id="atomic_number">83</span>
+          <span id="atomic_mass">208.98</span>
+          <pre id="element_symbol" class="grecian">Bi</pre>
+          <pre id="element_name">Bismuth    </pre>
+        </td>
+        <td class="grecian">
+          <span id="atomic_number">84</span>
+          <span id="atomic_mass">209</span>
+          <pre id="element_symbol" class="grecian">Po</pre>
+          <pre id="element_name">Polonium   </pre>
+        </td>
+        <td class="grecian">
+          <span id="atomic_number">85</span>
+          <span id="atomic_mass">210</span>
+          <pre id="element_symbol" class="grecian">At</pre>
+          <pre id="element_name">Astatine     </pre>
+        </td>
+        <td class="pink">
+          <span id="atomic_number">86</span>
+          <span id="atomic_mass">222</span>
+          <pre id="element_symbol" class="pink">Rn</pre>
+          <pre id="element_name">Radon      </pre>
+        </td>
+      </tr>
+      <tr>
+        <td class="green">
+          <span id="atomic_number">87</span>
+          <span id="atomic_mass">223</span>
+          <pre id="element_symbol" class="green">Fr</pre>
+          <pre id="element_name">Francium    </pre>
+        </td>
+        <td class="purple">
+          <span id="atomic_number">88</span>
+          <span id="atomic_mass">226</span>
+          <pre id="element_symbol" class="purple">Ra</pre>
+          <pre id="element_name">Radium     </pre>
+        </td>
+        <td class="blue">
+          <span id="atomic_number">89</span>
+          <span id="atomic_mass">227</span>
+          <pre id="element_symbol" class="blue">Ac</pre>
+          <pre id="element_name">Actinium    </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">104</span>
+          <span id="atomic_mass">261</span>
+          <pre id="element_symbol" class="red">Rf</pre>
+          <pre id="element_name">Rutherfordium</pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">105</span>
+          <span id="atomic_mass">262</span>
+          <pre id="element_symbol" class="red">Db</pre>
+          <pre id="element_name">Dubnium    </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">106</span>
+          <span id="atomic_mass">269</span>
+          <pre id="element_symbol" class="red">Sg</pre>
+          <pre id="element_name">Seaborgium  </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">107</span>
+          <span id="atomic_mass">264</span>
+          <pre id="element_symbol" class="red">Bh</pre>
+          <pre id="element_name">Bohrium    </pre>
+        </td>
+        <td class="red">
+          <span id="atomic_number">108</span>
+          <span id="atomic_mass">269</span>
+          <pre id="element_symbol" class="red">Hs</pre>
+          <pre id="element_name">Hassium     </pre>
+        </td>
+        <td class="rice">
+          <span id="atomic_number">109</span>
+          <span id="atomic_mass">278</span>
+          <pre id="element_symbol" class="rice">Mt</pre>
+          <pre id="element_name">Meitnerium  </pre>
+        </td>
+        <td class="rice">
+          <span id="atomic_number">110</span>
+          <span id="atomic_mass">281</span>
+          <pre id="element_symbol" class="rice">Ds</pre>
+          <pre id="element_name">Darmstadtium</pre>
+        </td>
+        <td class="rice">
+          <span id="atomic_number">111</span>
+          <span id="atomic_mass">282</span>
+          <pre id="element_symbol" class="rice">Rg</pre>
+          <pre id="element_name">Roentgenium </pre>
+        </td>
+        <td class="rice">
+          <span id="atomic_number">112</span>
+          <span id="atomic_mass">285</span>
+          <pre id="element_symbol" class="rice">Cn</pre>
+          <pre id="element_name">Copernicium </pre>
+        </td>
+        <td class="rice">
+          <span id="atomic_number">113</span>
+          <span id="atomic_mass">286</span>
+          <pre id="element_symbol" class="rice">Nh</pre>
+          <pre id="element_name">Nihonium   </pre>
+        </td>
+        <td class="rice">
+          <span id="atomic_number">114</span>
+          <span id="atomic_mass">289</span>
+          <pre id="element_symbol" class="rice">Fl</pre>
+          <pre id="element_name">Flerovium   </pre>
+        </td>
+        <td class="rice">
+          <span id="atomic_number">115</span>
+          <span id="atomic_mass">289</span>
+          <pre id="element_symbol" class="rice">Mc</pre>
+          <pre id="element_name">Moscovium  </pre>
+        </td>
+        <td class="rice">
+          <span id="atomic_number">116</span>
+          <span id="atomic_mass">293</span>
+          <pre id="element_symbol" class="rice">Lv</pre>
+          <pre id="element_name">Livermorium </pre>
+        </td>
+        <td class="rice">
+          <span id="atomic_number">117</span>
+          <span id="atomic_mass">294</span>
+          <pre id="element_symbol" class="rice">Ts</pre>
+          <pre id="element_name">Tennessine  </pre>
+        </td>
+        <td class="rice">
+          <span id="atomic_number">118</span>
+          <span id="atomic_mass">294</span>
+          <pre id="element_symbol" class="rice">Og</pre>
+          <pre id="element_name">Oganesson  </pre>
+        </td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <table id="table_2">
+      <tr>
+        <td class="gun">
+          <span id="atomic_number">58</span>
+          <span id="atomic_mass">140.12</span>
+          <pre id="element_symbol" class="gun">Ce</pre>
+          <pre id="element_name">Cerium     </pre>
+        </td>
+        <td class="gun">
+          <span id="atomic_number">59</span>
+          <span id="atomic_mass">140.91</span>
+          <pre id="element_symbol" class="gun">Pr</pre>
+          <pre id="element_name">Praseodymium</pre>
+        </td>
+        <td class="gun">
+          <span id="atomic_number">60</span>
+          <span id="atomic_mass">144.24</span>
+          <pre id="element_symbol" class="gun">Nd</pre>
+          <pre id="element_name">Neodymium </pre>
+        </td>
+        <td class="gun">
+          <span id="atomic_number">61</span>
+          <span id="atomic_mass">145</span>
+          <pre id="element_symbol" class="gun">Pm</pre>
+          <pre id="element_name">Promethium </pre>
+        </td>
+        <td class="gun">
+          <span id="atomic_number">62</span>
+          <span id="atomic_mass">150.36</span>
+          <pre id="element_symbol" class="gun">Sm</pre>
+          <pre id="element_name">Samarium   </pre>
+        </td>
+        <td class="gun">
+          <span id="atomic_number">63</span>
+          <span id="atomic_mass">151.96</span>
+          <pre id="element_symbol" class="gun">Eu</pre>
+          <pre id="element_name">Europium   </pre>
+        </td>
+        <td class="gun">
+          <span id="atomic_number">64</span>
+          <span id="atomic_mass">157.25</span>
+          <pre id="element_symbol" class="gun">Gd</pre>
+          <pre id="element_name">Gadolinium  </pre>
+        </td>
+        <td class="gun">
+          <span id="atomic_number">65</span>
+          <span id="atomic_mass">158.93</span>
+          <pre id="element_symbol" class="gun">Tb</pre>
+          <pre id="element_name">Terbium     </pre>
+        </td>
+        <td class="gun">
+          <span id="atomic_number">66</span>
+          <span id="atomic_mass">162.5</span>
+          <pre id="element_symbol" class="gun">Dy</pre>
+          <pre id="element_name">Dysprosium  </pre>
+        </td>
+        <td class="gun">
+          <span id="atomic_number">67</span>
+          <span id="atomic_mass">164.93</span>
+          <pre id="element_symbol" class="gun">Ho</pre>
+          <pre id="element_name">Holmium    </pre>
+        </td>
+        <td class="gun">
+          <span id="atomic_number">68</span>
+          <span id="atomic_mass">167.26</span>
+          <pre id="element_symbol" class="gun">Er</pre>
+          <pre id="element_name">Erbium      </pre>
+        </td>
+        <td class="gun">
+          <span id="atomic_number">69</span>
+          <span id="atomic_mass">168.93</span>
+          <pre id="element_symbol" class="gun">Tm</pre>
+          <pre id="element_name">Thulium     </pre>
+        </td>
+        <td class="gun">
+          <span id="atomic_number">70</span>
+          <span id="atomic_mass">173.04</span>
+          <pre id="element_symbol" class="gun">Yb</pre>
+          <pre id="element_name">Ytterbium   </pre>
+        </td>
+        <td class="gun">
+          <span id="atomic_number">71</span>
+          <span id="atomic_mass">174.97</span>
+          <pre id="element_symbol" class="gun">Lu</pre>
+          <pre id="element_name">Lutetium    </pre>
+        </td>
+      </tr>
+      <tr>
+        <td class="blue">
+          <span id="atomic_number">90</span>
+          <span id="atomic_mass">232.04</span>
+          <pre id="element_symbol" class="blue">Th</pre>
+          <pre id="element_name">Thorium     </pre>
+        </td>
+        <td class="blue">
+          <span id="atomic_number">91</span>
+          <span id="atomic_mass">231.04</span>
+          <pre id="element_symbol" class="blue">Pa</pre>
+          <pre id="element_name">Protactinium </pre>
+        </td>
+        <td class="blue">
+          <span id="atomic_number">92</span>
+          <span id="atomic_mass">238.03</span>
+          <pre id="element_symbol" class="blue">U</pre>
+          <pre id="element_name">Uranium     </pre>
+        </td>
+        <td class="blue">
+          <span id="atomic_number">93</span>
+          <span id="atomic_mass">23705</span>
+          <pre id="element_symbol" class="blue">Np</pre>
+          <pre id="element_name">Neptunium   </pre>
+        </td>
+        <td class="blue">
+          <span id="atomic_number">94</span>
+          <span id="atomic_mass">244</span>
+          <pre id="element_symbol" class="blue">Pu</pre>
+          <pre id="element_name">Plutonium   </pre>
+        </td>
+        <td class="blue">
+          <span id="atomic_number">95</span>
+          <span id="atomic_mass">243</span>
+          <pre id="element_symbol" class="blue">Am</pre>
+          <pre id="element_name">Americium  </pre>
+        </td>
+        <td class="blue">
+          <span id="atomic_number">96</span>
+          <span id="atomic_mass">247</span>
+          <pre id="element_symbol" class="blue">Cm</pre>
+          <pre id="element_name">Curium     </pre>
+        </td>
+        <td class="blue">
+          <span id="atomic_number">97</span>
+          <span id="atomic_mass">247</span>
+          <pre id="element_symbol" class="blue">Bk</pre>
+          <pre id="element_name">Berkelium   </pre>
+        </td>
+        <td class="blue">
+          <span id="atomic_number">98</span>
+          <span id="atomic_mass">251</span>
+          <pre id="element_symbol" class="blue">Cf</pre>
+          <pre id="element_name">Californium  </pre>
+        </td>
+        <td class="blue">
+          <span id="atomic_number">99</span>
+          <span id="atomic_mass">252</span>
+          <pre id="element_symbol" class="blue">Es</pre>
+          <pre id="element_name">Einsteinium  </pre>
+        </td>
+        <td class="blue">
+          <span id="atomic_number">100</span>
+          <span id="atomic_mass">257</span>
+          <pre id="element_symbol" class="blue">Fm</pre>
+          <pre id="element_name">Fermium    </pre>
+        </td>
+        <td class="blue">
+          <span id="atomic_number">101</span>
+          <span id="atomic_mass">258</span>
+          <pre id="element_symbol" class="blue">Md</pre>
+          <pre id="element_name">Mendelevium </pre>
+        </td>
+        <td class="blue">
+          <span id="atomic_number">102</span>
+          <span id="atomic_mass">259</span>
+          <pre id="element_symbol" class="blue">No</pre>
+          <pre id="element_name">Nobelium    </pre>
+        </td>
+        <td class="blue">
+          <span id="atomic_number">103</span>
+          <span id="atomic_mass">262</span>
+          <pre id="element_symbol" class="blue">Lr</pre>
+          <pre id="element_name">Lowrencium </pre>
+        </td>
+      </tr>
+    </table>
+    <div
+      id="big"
+      class="red"
+      style="position: relative; top: -107px; left: 200px"
+    >
+      <span class="number">47</span>
+      <span class="mass">107.87</span>
+      <pre class="symbol">Ag</pre>
+      <pre class="name">Silver</pre>
+      <div
+        style="
+          border-top: 2px solid white;
+          border-right: 2px solid white;
+          background-color: transparent;
+          width: 135px;
+          height: 18px;
+          position: absolute;
+          top: -19.5px;
+          left: -35px;
+        "
+      >
+        <span style="position: relative; left: -115px; top: -10px"
+          >Atomic Mass</span
+        >
+        <div
+          style="
+            border-top: 2px solid white;
+            background-color: transparent;
+            width: 38px;
+            position: absolute;
+            top: 29px;
+            left: 0px;
+          "
+        >
+          <pre style="position: relative; left: -132px; top: -10px">
+Atomic Number</pre
+          >
+        </div>
+        <div
+          style="
+            border-top: 2px solid white;
+            background-color: transparent;
+            width: 55px;
+            position: absolute;
+            top: 79px;
+            left: 0px;
+          "
+        >
+          <pre style="position: relative; left: -139px; top: -10px">
+Element Symbol</pre
+          >
+        </div>
+        <div
+          style="
+            border-top: 2px solid white;
+            background-color: transparent;
+            width: 55px;
+            position: absolute;
+            top: 143px;
+            left: 0px;
+          "
+        >
+          <pre style="position: relative; left: -132px; top: -10px">
+Element Name</pre
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
